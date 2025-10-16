@@ -1,0 +1,93 @@
+# Default values for homebridge.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+image:
+  repository: homebridge/homebridge
+  pullPolicy: IfNotPresent
+  # The chart intentionally sets a default image tag below. To inherit the chart appVersion ("2024.1.1"), remove the tag key.
+  tag: "2024-01-08"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+# DaemonSet specific configuration
+daemonset:
+  # Use host network for Homebridge to discover and communicate with HomeKit devices
+  hostNetwork: true
+  # DNS policy when using hostNetwork
+  dnsPolicy: ClusterFirstWithHostNet
+
+service:
+  type: ClusterIP
+  port: 8581
+  targetPort: 8581
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # cert-manager.io/cluster-issuer: letsencrypt-prod
+  hosts:
+    - host: homebridge.local
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+  #  - secretName: homebridge-tls
+  #    hosts:
+  #      - homebridge.local
+
+persistence:
+  enabled: true
+  # existingClaim: ""
+  storageClass: ""
+  accessMode: ReadWriteOnce
+  size: 1Gi
+  # Storage path on the host for PV
+  hostPath: /var/lib/homebridge
+  # Node selector for PV (optional)
+  nodeAffinity: {}
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
