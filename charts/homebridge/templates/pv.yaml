@@ -13,6 +13,9 @@ spec:
   {{- if .Values.persistence.storageClass }}
   storageClassName: {{ .Values.persistence.storageClass }}
   {{- end }}
+  {{- if .Values.persistence.reclaimPolicy }}
+  persistentVolumeReclaimPolicy: {{ .Values.persistence.reclaimPolicy }}
+  {{- end }}
   hostPath:
     path: {{ .Values.persistence.hostPath }}
     type: DirectoryOrCreate
