@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  homebridge:
+  - apiVersion: v2
+    appVersion: 2024.1.1
+    created: "2025-10-16T16:21:22.755223724Z"
+    description: A Helm chart for deploying Homebridge as a DaemonSet
+    digest: 5d935ad36470adc7199d60e9c73afc98ab210c5c2531b58c67476fe8002895d4
+    home: https://homebridge.io
+    keywords:
+    - homebridge
+    - homekit
+    - smart-home
+    maintainers:
+    - name: CalebSargeant
+    name: homebridge
+    sources:
+    - https://github.com/homebridge/homebridge
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/homebridge-0.1.1/homebridge-0.1.1.tgz
+    version: 0.1.1
+generated: "2025-10-16T16:21:22.755229444Z"
