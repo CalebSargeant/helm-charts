@@ -1,0 +1,70 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/calebsargeant/n8n
+  pullPolicy: IfNotPresent
+  tag: "latest@sha256:49e84bc02856fae6c632d15e24972eaa56d007292ebb7c96d3606a4874e4e499"
+
+namespace: automation
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "50m"
+  limits:
+    memory: "512Mi"
+    cpu: "200m"
+
+env:
+  DB_TYPE: "postgresdb"
+  DB_POSTGRESDB_DATABASE: "n8n"
+  DB_POSTGRESDB_HOST: "postgres.database.svc.cluster.local"
+  DB_POSTGRESDB_PORT: "5432"
+  DB_POSTGRESDB_SCHEMA: "public"
+  N8N_BASIC_AUTH_ACTIVE: "true"
+  N8N_BASIC_AUTH_USER: "admin"
+  WEBHOOK_URL: "https://n8n.sargeant.co"
+  N8N_RUNNERS_ENABLED: "true"
+  N8N_CUSTOM_EXTENSIONS: "/usr/local/lib/node_modules/puppeteer"
+
+secrets:
+  postgres:
+    usernameKey: postgres-username
+    passwordKey: postgres-password
+  encryptionKey: encryption-key
+
+service:
+  type: ClusterIP
+  port: 5678
+  targetPort: 5678
+
+ingress:
+  enabled: true
+  className: traefik
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    cert-manager.io/cluster-issuer: letsencrypt-dns
+    traefik.ingress.kubernetes.io/service.serversscheme: http
+    traefik.ingress.kubernetes.io/entrypoints: websecure
+  hosts:
+    - host: n8n.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+    - host: n8n.example.local
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: n8n-tls
+      hosts:
+        - n8n.sargeant.co
+
+persistence:
+  enabled: true
+  storageClassName: n8n
+  accessMode: ReadWriteOnce
+  size: 5Gi
+  mountPath: /home/node/.n8n
+  hostPath: /mnt/nvme/n8n
+  reclaimPolicy: Retain
