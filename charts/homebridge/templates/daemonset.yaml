@@ -22,6 +22,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       serviceAccountName: {{ include "homebridge.serviceAccountName" . }}
+      automountServiceAccountToken: false
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       hostNetwork: {{ .Values.daemonset.hostNetwork }}
@@ -59,7 +60,15 @@ spec:
           initialDelaySeconds: 10
           periodSeconds: 5
         resources:
-          {{- toYaml .Values.resources | nindent 12 }}
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+            ephemeral-storage: "1Gi"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+            ephemeral-storage: "2Gi"
+
       volumes:
       - name: homebridge-data
         {{- if .Values.persistence.enabled }}
