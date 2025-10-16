@@ -39,7 +39,7 @@ spec:
           protocol: TCP
         env:
         - name: TZ
-          value: UTC
+          value: {{ default "UTC" .Values.timezone | quote }}
         - name: HOMEBRIDGE_CONFIG_UI
           value: "1"
         - name: HOMEBRIDGE_CONFIG_UI_PORT
