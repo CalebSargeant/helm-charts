@@ -1,6 +1,6 @@
 apiVersion: v2
 name: nzbhydra2
-description: A Helm chart for NZBHydra2 - Usenet meta search
+description: A Helm chart for NZBHydra2 - a meta search for NZB indexers
 
 # A chart can be either an 'application' or a 'library' chart.
 #
