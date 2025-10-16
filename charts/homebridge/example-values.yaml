@@ -11,6 +11,7 @@ image:
 daemonset:
   hostNetwork: true
   dnsPolicy: ClusterFirstWithHostNet
+timezone: Europe/Amsterdam
 
 # Service configuration
 service:
