@@ -27,27 +27,27 @@ helm uninstall my-homebridge
 
 The following table lists the configurable parameters of the Homebridge chart and their default values.
 
-| Parameter | Description | Default |
-|-----------|-------------|---------|
-| `image.repository` | Homebridge image repository | `homebridge/homebridge` |
-| `image.tag` | Homebridge image tag | `2024-01-08` |
-| `image.pullPolicy` | Image pull policy | `IfNotPresent` |
-| `daemonset.hostNetwork` | Enable host networking for the DaemonSet | `true` |
-| `daemonset.dnsPolicy` | DNS policy when using hostNetwork | `ClusterFirstWithHostNet` |
-| `service.type` | Kubernetes service type | `ClusterIP` |
-| `service.port` | Service port | `8581` |
-| `service.targetPort` | Container port | `8581` |
-| `ingress.enabled` | Enable ingress | `false` |
-| `ingress.className` | Ingress class name | `""` |
-| `ingress.hosts[0].host` | Hostname for the ingress | `homebridge.local` |
-| `ingress.hosts[0].paths[0].path` | Path for the ingress | `/` |
-| `ingress.hosts[0].paths[0].pathType` | Path type | `Prefix` |
-| `persistence.enabled` | Enable persistence | `true` |
-| `persistence.storageClass` | Storage class for PVC | `""` |
-| `persistence.accessMode` | Access mode for PVC | `ReadWriteOnce` |
-| `persistence.size` | Size of PVC | `1Gi` |
-| `persistence.hostPath` | Host path for PV (when specified, creates a PV) | `/var/lib/homebridge` |
-| `resources` | CPU/Memory resource requests/limits | `{}` |
+Parameter | Description | Default |
+-----------|-------------|---------|
+`image.repository` | Homebridge image repository | `homebridge/homebridge` |
+`image.tag` | Homebridge image tag | `2024-01-08` |
+`image.pullPolicy` | Image pull policy | `IfNotPresent` |
+`daemonset.hostNetwork` | Enable host networking for the DaemonSet | `true` |
+`daemonset.dnsPolicy` | DNS policy when using hostNetwork | `ClusterFirstWithHostNet` |
+`service.type` | Kubernetes service type | `ClusterIP` |
+`service.port` | Service port | `8581` |
+`service.targetPort` | Container port | `8581` |
+`ingress.enabled` | Enable ingress | `false` |
+`ingress.className` | Ingress class name | `""` |
+`ingress.hosts[0].host` | Hostname for the ingress | `homebridge.local` |
+`ingress.hosts[0].paths[0].path` | Path for the ingress | `/` |
+`ingress.hosts[0].paths[0].pathType` | Path type | `Prefix` |
+`persistence.enabled` | Enable persistence | `true` |
+`persistence.storageClass` | Storage class for PVC | `""` |
+`persistence.accessMode` | Access mode for PVC | `ReadWriteOnce` |
+`persistence.size` | Size of PVC | `1Gi` |
+`persistence.hostPath` | Host path for PV (when specified, creates a PV) | `/var/lib/homebridge` |
+`resources` | CPU/Memory resource requests/limits | `{}` |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example:
 

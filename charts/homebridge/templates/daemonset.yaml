@@ -60,14 +60,7 @@ spec:
           initialDelaySeconds: 10
           periodSeconds: 5
         resources:
-          requests:
-            memory: "256Mi"
-            cpu: "100m"
-            ephemeral-storage: "1Gi"
-          limits:
-            memory: "512Mi"
-            cpu: "500m"
-            ephemeral-storage: "2Gi"
+          {{- toYaml .Values.resources | nindent 10 }}
 
       volumes:
       - name: homebridge-data
