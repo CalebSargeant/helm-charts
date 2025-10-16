@@ -1,0 +1,63 @@
+# Example values for deploying Homebridge with ingress enabled
+# Save this file as custom-values.yaml and install with:
+# helm install my-homebridge ./charts/homebridge -f custom-values.yaml
+
+image:
+  repository: homebridge/homebridge
+  tag: "2024-01-08"
+  pullPolicy: IfNotPresent
+
+# DaemonSet configuration
+daemonset:
+  hostNetwork: true
+  dnsPolicy: ClusterFirstWithHostNet
+
+# Service configuration
+service:
+  type: ClusterIP
+  port: 8581
+  targetPort: 8581
+
+# Enable ingress for external access
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+  hosts:
+    - host: homebridge.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: homebridge-tls
+      hosts:
+        - homebridge.example.com
+
+# Persistence configuration
+persistence:
+  enabled: true
+  storageClass: "local-path"
+  accessMode: ReadWriteOnce
+  size: 2Gi
+  hostPath: /var/lib/homebridge
+
+# Resource limits
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+# Node selector (optional)
+# nodeSelector:
+#   kubernetes.io/hostname: node-1
+
+# Tolerations (optional)
+# tolerations:
+#   - key: "node-role.kubernetes.io/control-plane"
+#     operator: "Exists"
+#     effect: "NoSchedule"
