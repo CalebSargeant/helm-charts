@@ -1,5 +1,192 @@
 apiVersion: v1
 entries:
+  adguard-home:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:56.918629449Z"
+    description: A Helm chart for Kubernetes
+    digest: b88371a301fd61063fbfed5944a8f6bcf0c302a826c203f9d7d309347f6de8b7
+    name: adguard-home
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/adguard-home-0.1.0/adguard-home-0.1.0.tgz
+    version: 0.1.0
+  alertmanager:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:57.037144366Z"
+    description: A Helm chart for Kubernetes
+    digest: e55b75ad5f2156c19f3d4e4880e3e6cda5564821c2ab6abc93d08ad49025fe58
+    name: alertmanager
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/alertmanager-0.1.0/alertmanager-0.1.0.tgz
+    version: 0.1.0
+  bazarr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:57.183959322Z"
+    description: A Helm chart for Kubernetes
+    digest: ff6fb11c7572ef675f486dfb0f5938cae2d2db4346b49c2967a6655d05a0e5f4
+    name: bazarr
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/bazarr-0.1.0/bazarr-0.1.0.tgz
+    version: 0.1.0
+  blackbox-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:57.307260332Z"
+    description: A Helm chart for Kubernetes
+    digest: d702d3bbf920534743ca464c8f2eee07a7611f2d74e3769950da7d2e8b7597dd
+    name: blackbox-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/blackbox-exporter-0.1.0/blackbox-exporter-0.1.0.tgz
+    version: 0.1.0
+  cloudflare-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:57.430387311Z"
+    description: A Helm chart for Kubernetes
+    digest: e0e32318b5c9a258f83be4cbc55e118e5926f4a357fd8e018fd3e42cb0071cc9
+    name: cloudflare-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/cloudflare-exporter-0.1.0/cloudflare-exporter-0.1.0.tgz
+    version: 0.1.0
+  cloudflared:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:57.564174302Z"
+    description: A Helm chart for Kubernetes
+    digest: b12f3887365c31266276d47b289ee238c7ba14c81c2589d4bb3004c2fd5fb219
+    name: cloudflared
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/cloudflared-0.1.0/cloudflared-0.1.0.tgz
+    version: 0.1.0
+  etcd-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:57.725007414Z"
+    description: A Helm chart for Kubernetes
+    digest: 27e3bdebb4103b893daedba2a3e3d3c93d8ff98711a63459c991cbedf4302195
+    name: etcd-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/etcd-exporter-0.1.0/etcd-exporter-0.1.0.tgz
+    version: 0.1.0
+  flaresolverr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:57.879516611Z"
+    description: A Helm chart for Kubernetes
+    digest: d5f5be3eaaf58a7162f440c467edae8ef58153fd980a2d387c6b67c6a7d52380
+    name: flaresolverr
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/flaresolverr-0.1.0/flaresolverr-0.1.0.tgz
+    version: 0.1.0
+  github-runner:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:58.009412977Z"
+    description: A Helm chart for Kubernetes
+    digest: de54172d4a55bbdc24882079160fa2b178ddb576cbd48d25f237eb56963b23b5
+    name: github-runner
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/github-runner-0.1.0/github-runner-0.1.0.tgz
+    version: 0.1.0
+  grafana-alloy:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:58.148741771Z"
+    description: A Helm chart for Kubernetes
+    digest: 3b55b4f4cb574d7e18b445f0379f133142719db42cb7f80cd2c4e344e5af0321
+    name: grafana-alloy
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/grafana-alloy-0.1.0/grafana-alloy-0.1.0.tgz
+    version: 0.1.0
+  grafana-faro:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:58.294200923Z"
+    description: A Helm chart for Kubernetes
+    digest: 29704892960cf90f57f115790f6c9e307997bad4be200f5563de6ecaf32aabfb
+    name: grafana-faro
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/grafana-faro-0.1.0/grafana-faro-0.1.0.tgz
+    version: 0.1.0
+  grafana-loki:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:58.478323172Z"
+    description: A Helm chart for Kubernetes
+    digest: 47240cf39dfcaca7731d64863223d1fcdc1391e9755f6574312cb784fb94cf2a
+    name: grafana-loki
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/grafana-loki-0.1.0/grafana-loki-0.1.0.tgz
+    version: 0.1.0
+  grafana-mimir:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:58.616493931Z"
+    description: A Helm chart for Kubernetes
+    digest: 86b17b99bf0664b6bda293fbbf5a87aafa62be16f59ebc249109656413b2e6e2
+    name: grafana-mimir
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/grafana-mimir-0.1.0/grafana-mimir-0.1.0.tgz
+    version: 0.1.0
+  grafana-pyroscope:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:58.724912544Z"
+    description: A Helm chart for Kubernetes
+    digest: 92f27588cf71fccbbbdb0d167551198613960b10d5bcc52567c1cbca98c532ea
+    name: grafana-pyroscope
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/grafana-pyroscope-0.1.0/grafana-pyroscope-0.1.0.tgz
+    version: 0.1.0
+  grafana-tempo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:58.856769792Z"
+    description: A Helm chart for Kubernetes
+    digest: 217077965a4f2a126f30f20ab1a7a8d0211b489023de4952015ce343b1001452
+    name: grafana-tempo
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/grafana-tempo-0.1.0/grafana-tempo-0.1.0.tgz
+    version: 0.1.0
+  homarr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:59.015550684Z"
+    description: A Helm chart for Kubernetes
+    digest: 891b9953787f772a37db4eb5d42fb62c3373ee26b7f11aaa78d5d34e99d61c54
+    name: homarr
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/homarr-0.1.0/homarr-0.1.0.tgz
+    version: 0.1.0
+  home-assistant-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:59.124202608Z"
+    description: A Helm chart for Kubernetes
+    digest: 5c0e77868d0458cb2e791323a3a9641db2251beecb420947b2bd795f8a349951
+    name: home-assistant-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/home-assistant-exporter-0.1.0/home-assistant-exporter-0.1.0.tgz
+    version: 0.1.0
   homebridge:
   - apiVersion: v2
     appVersion: 2024.1.1
@@ -20,4 +207,343 @@ entries:
     urls:
     - https://github.com/CalebSargeant/helm-charts/releases/download/homebridge-0.1.1/homebridge-0.1.1.tgz
     version: 0.1.1
-generated: "2025-10-16T16:21:22.755229444Z"
+  homebridge-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:59.687331992Z"
+    description: A Helm chart for Kubernetes
+    digest: 6d1f5e42ffca07a767f304927329c0b17d603da4469ac3496d1ae47c54488b14
+    name: homebridge-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/homebridge-exporter-0.1.0/homebridge-exporter-0.1.0.tgz
+    version: 0.1.0
+  jackett:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:19:59.844218079Z"
+    description: A Helm chart for Kubernetes
+    digest: d3b58a1263509f8087327fcb407a0c348bc29a13a93960fe9e4fa0ea33c0b316
+    name: jackett
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/jackett-0.1.0/jackett-0.1.0.tgz
+    version: 0.1.0
+  kured:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:00.025885895Z"
+    description: A Helm chart for Kubernetes
+    digest: db953e80519885899ed42bcf1759b416c04e6b2a55e7fb860b7f8f21e89628d0
+    name: kured
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/kured-0.1.0/kured-0.1.0.tgz
+    version: 0.1.0
+  meross-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:00.203970078Z"
+    description: A Helm chart for Kubernetes
+    digest: 8df844e685203edf0432811f3f419c200ca829ee473a021453242b0158068505
+    name: meross-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/meross-exporter-0.1.0/meross-exporter-0.1.0.tgz
+    version: 0.1.0
+  mikrotik-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:00.344155125Z"
+    description: A Helm chart for Kubernetes
+    digest: 0b1531cd4d0ee52f20944ebaae7fc494fb978154fbffacac7b1491efa666126b
+    name: mikrotik-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/mikrotik-exporter-0.1.0/mikrotik-exporter-0.1.0.tgz
+    version: 0.1.0
+  n8n:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-10-16T17:20:00.495005144Z"
+    description: A Helm chart for deploying n8n automation platform
+    digest: 8aa0d48518783a891e67c5d3b0ea3e73d7922f323f88263e805af3bc62649703
+    home: https://n8n.io
+    keywords:
+    - n8n
+    - automation
+    - workflow
+    maintainers:
+    - name: CalebSargeant
+    name: n8n
+    sources:
+    - https://github.com/n8n-io/n8n
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/n8n-0.1.0/n8n-0.1.0.tgz
+    version: 0.1.0
+  nextcloud:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:00.632162214Z"
+    description: A Helm chart for Kubernetes
+    digest: 52ec5286adcd1db14aa07479004df6b77a019a2de92a430fe36763fd94c3133a
+    name: nextcloud
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/nextcloud-0.1.0/nextcloud-0.1.0.tgz
+    version: 0.1.0
+  nextcloud-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:00.770378932Z"
+    description: A Helm chart for Kubernetes
+    digest: b2cb2438c937c6ecc807d9cfc5c2bb44051e0f39510990834fb56853c2d9b0bd
+    name: nextcloud-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/nextcloud-exporter-0.1.0/nextcloud-exporter-0.1.0.tgz
+    version: 0.1.0
+  nfs-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:00.888303699Z"
+    description: A Helm chart for Kubernetes
+    digest: 787a66e63f91de1926b4604bd4bcbdc3c406300f45b07ee886906c4a7cd4ef8a
+    name: nfs-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/nfs-exporter-0.1.0/nfs-exporter-0.1.0.tgz
+    version: 0.1.0
+  nvme-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:01.017221315Z"
+    description: A Helm chart for Kubernetes
+    digest: 20b8fd465896c652f922e645f81336f6132de991f3b88baedd7b567e008b298e
+    name: nvme-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/nvme-exporter-0.1.0/nvme-exporter-0.1.0.tgz
+    version: 0.1.0
+  nzbhydra2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:01.158580053Z"
+    description: A Helm chart for NZBHydra2 - a meta search for NZB indexers
+    digest: cf5327e07753b8d61d81711834b5ab65722a986047cc28136d2049626520e56c
+    name: nzbhydra2
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/nzbhydra2-0.1.0/nzbhydra2-0.1.0.tgz
+    version: 0.1.0
+  overseerr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:01.339002056Z"
+    description: A Helm chart for Kubernetes
+    digest: b7a46adf195f970410aa5f12b83506c44e159ee2135d183e88c29d67fba71ada
+    name: overseerr
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/overseerr-0.1.0/overseerr-0.1.0.tgz
+    version: 0.1.0
+  plex:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:01.588413674Z"
+    description: A Helm chart for Kubernetes
+    digest: 88b05e4e021b962ab17bb9446c2b1deab1ef945d6f75b4fc7b93acdfbd308a3d
+    name: plex
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/plex-0.1.0/plex-0.1.0.tgz
+    version: 0.1.0
+  plex-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:01.746264455Z"
+    description: A Helm chart for Kubernetes
+    digest: 869b4cd97f9b7d398a3cce27018eea4e147a5837ed59affe10c4bb761605b013
+    name: plex-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/plex-exporter-0.1.0/plex-exporter-0.1.0.tgz
+    version: 0.1.0
+  pmacct-netflow:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:01.965768415Z"
+    description: A Helm chart for Kubernetes
+    digest: b805f59ebb907b7b83df0ece17c084f47a16232d97c8205c13c982054a16f6d9
+    name: pmacct-netflow
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/pmacct-netflow-0.1.0/pmacct-netflow-0.1.0.tgz
+    version: 0.1.0
+  postgres:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:02.098037053Z"
+    description: A Helm chart for Kubernetes
+    digest: 16353e6bb68524b28728531ee1a553656a3c32a1a3ae3a4719fdc39ab7f13bfe
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
+    version: 0.1.0
+  postgres-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:02.246014765Z"
+    description: A Helm chart for Kubernetes
+    digest: c8fb42122ff0105873d5d0e5fca03c30004bf30ed4b22f08cade4ae7b532934d
+    name: postgres-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/postgres-exporter-0.1.0/postgres-exporter-0.1.0.tgz
+    version: 0.1.0
+  prowlarr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:02.3803183Z"
+    description: A Helm chart for Kubernetes
+    digest: 284e848574c0ea22d4cff7dea8365a1744bfbdf4ef6a4ca4ff461cc3366f5b1f
+    name: prowlarr
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/prowlarr-0.1.0/prowlarr-0.1.0.tgz
+    version: 0.1.0
+  qbittorrent:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:02.522629823Z"
+    description: A Helm chart for Kubernetes
+    digest: 94960e50da1eb8cb1d7e84423f0d93ddca09c19c6e20713e0e758c3cd25b4fc2
+    name: qbittorrent
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/qbittorrent-0.1.0/qbittorrent-0.1.0.tgz
+    version: 0.1.0
+  radarr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:02.661385372Z"
+    description: A Helm chart for Kubernetes
+    digest: ce6340936c462a6334baab386bf02645538e6737d351f49250b93333a54a44f9
+    name: radarr
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/radarr-0.1.0/radarr-0.1.0.tgz
+    version: 0.1.0
+  raspberrypi-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:02.804333189Z"
+    description: A Helm chart for Kubernetes
+    digest: a4809a61ad313db5064f181f4cf4a50687eca8ade30ba754d0433286c17bf670
+    name: raspberrypi-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/raspberrypi-exporter-0.1.0/raspberrypi-exporter-0.1.0.tgz
+    version: 0.1.0
+  restic-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:02.924397155Z"
+    description: A Helm chart for Kubernetes
+    digest: fc0af6dde51839e966693b82107abd1a838d35c17966dfa96f6ea3a32804a250
+    name: restic-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/restic-exporter-0.1.0/restic-exporter-0.1.0.tgz
+    version: 0.1.0
+  sabnzbd:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:03.05975442Z"
+    description: A Helm chart for Kubernetes
+    digest: 97428d6201ab7815ef9ce06b052104621e7b6501dfb1a543694e566e08491e3b
+    name: sabnzbd
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/sabnzbd-0.1.0/sabnzbd-0.1.0.tgz
+    version: 0.1.0
+  scraparr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:03.205518512Z"
+    description: A Helm chart for Kubernetes
+    digest: 71241ecc0fa5bc6f71cd2e0dbc0bae3374ea0d65d48a5d50009706b0a493a2df
+    name: scraparr
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/scraparr-0.1.0/scraparr-0.1.0.tgz
+    version: 0.1.0
+  smartctl-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:03.357660634Z"
+    description: A Helm chart for Kubernetes
+    digest: fad954fdf5fb7fe6b5c3fde0160743e59a49a9d461b9761133a8f13f0b567fcb
+    name: smartctl-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/smartctl-exporter-0.1.0/smartctl-exporter-0.1.0.tgz
+    version: 0.1.0
+  sonarr:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:03.518999664Z"
+    description: A Helm chart for Kubernetes
+    digest: 29394906a8b85643a18c9849c27188b0c27f3aa6005464d64a44b4e26758685b
+    name: sonarr
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/sonarr-0.1.0/sonarr-0.1.0.tgz
+    version: 0.1.0
+  timemachine:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:03.62139752Z"
+    description: A Helm chart for Kubernetes
+    digest: 460e714946c806b7d0005af323ea622d5fb42bc8aa4214c2f558fa7c33fbca54
+    name: timemachine
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/timemachine-0.1.0/timemachine-0.1.0.tgz
+    version: 0.1.0
+  traefik-exporter:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:03.743365709Z"
+    description: A Helm chart for Kubernetes
+    digest: b73fcfce226436bf51f264cfef3719dbc08375eaf65205dd4830f24ff1d69c7f
+    name: traefik-exporter
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/traefik-exporter-0.1.0/traefik-exporter-0.1.0.tgz
+    version: 0.1.0
+  velero:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:03.878928729Z"
+    description: A Helm chart for Kubernetes
+    digest: 80c745e15ca0271aa18f4177892d017a36820baa472f8d939a2f9b659092b670
+    name: velero
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/velero-0.1.0/velero-0.1.0.tgz
+    version: 0.1.0
+  your-spotify:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-10-16T17:20:03.999571854Z"
+    description: A Helm chart for Kubernetes
+    digest: 52fd3eb0fb74be95f9a45d5244dcc31ee4296fe987c401441d7316c8fc2aba74
+    name: your-spotify
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/your-spotify-0.1.0/your-spotify-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-10-16T17:20:03.999586451Z"
