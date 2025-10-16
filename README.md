@@ -1,5 +1,5 @@
 <!-- Quality & Security Overview -->
-[![CodeQL](https://github.com/CalebSargeant/helm-charts/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/CalebSargeant/mikrotik-chr/actions/workflows/github-code-scanning/codeql)
+[![CodeQL](https://github.com/CalebSargeant/helm-charts/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/CalebSargeant/helm-charts/actions/workflows/github-code-scanning/codeql)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=CalebSargeant_helm-charts&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=CalebSargeant_helm-charts)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=CalebSargeant_helm-charts&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=CalebSargeant_helm-charts)
 [![Known Vulnerabilities](https://snyk.io/test/github/CalebSargeant/helm-charts/badge.svg)](https://snyk.io/test/github/CalebSargeant/helm-charts)
