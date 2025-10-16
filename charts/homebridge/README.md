@@ -9,18 +9,18 @@ This chart deploys [Homebridge](https://homebridge.io) as a DaemonSet on a Kuber
 
 ## Installing the Chart
 
-To install the chart with the release name `my-homebridge`:
+To install the chart with the release name `homebridge`:
 
 ```bash
-helm install my-homebridge ./charts/homebridge
+helm install homebridge ./charts/homebridge
 ```
 
 ## Uninstalling the Chart
 
-To uninstall/delete the `my-homebridge` deployment:
+To uninstall/delete the `homebridge` deployment:
 
 ```bash
-helm uninstall my-homebridge
+helm uninstall homebridge
 ```
 
 ## Configuration
@@ -52,7 +52,7 @@ Parameter | Description | Default |
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example:
 
 ```bash
-helm install my-homebridge ./charts/homebridge \
+helm install homebridge ./charts/homebridge \
   --set ingress.enabled=true \
   --set ingress.hosts[0].host=homebridge.example.com
 ```
@@ -60,7 +60,7 @@ helm install my-homebridge ./charts/homebridge \
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart:
 
 ```bash
-helm install my-homebridge ./charts/homebridge -f values.yaml
+helm install homebridge ./charts/homebridge -f values.yaml
 ```
 
 ## Features
