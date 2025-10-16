@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "nvme-exporter.fullname" . }}-test-connection"
+  labels:
+    {{- include "nvme-exporter.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "nvme-exporter.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

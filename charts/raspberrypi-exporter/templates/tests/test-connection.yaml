@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "raspberrypi-exporter.fullname" . }}-test-connection"
+  labels:
+    {{- include "raspberrypi-exporter.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "raspberrypi-exporter.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

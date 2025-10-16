@@ -15,6 +15,7 @@ spec:
       labels:
         {{- include "n8n.selectorLabels" . | nindent 8 }}
     spec:
+      automountServiceAccountToken: false
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
