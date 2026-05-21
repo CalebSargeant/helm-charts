@@ -42,8 +42,10 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end -}}
 
 {{- define "mma.secretName" -}}
-{{- if .Values.secrets.existingSecretName -}}
+{{- if and .Values.secrets.existingSecretName (not .Values.secrets.create) -}}
 {{ .Values.secrets.existingSecretName }}
+{{- else if and .Values.secrets.existingSecretName .Values.secrets.create -}}
+{{- fail "secrets.create must be false when secrets.existingSecretName is set" -}}
 {{- else -}}
 {{ include "mma.fullname" . }}-env
 {{- end -}}
