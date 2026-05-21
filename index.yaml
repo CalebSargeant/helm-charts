@@ -262,6 +262,37 @@ entries:
     urls:
     - https://github.com/CalebSargeant/helm-charts/releases/download/mikrotik-exporter-0.1.0/mikrotik-exporter-0.1.0.tgz
     version: 0.1.0
+  mikrotik-minder-agent:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release
+      artifacthub.io/license: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-05-21T17:58:00.280062838Z"
+    description: 'Mikrotik Minder agent — runs from inside a Kubernetes cluster that
+      has network access to your MikroTik routers. Probes them over RouterOS API/SSH,
+      captures /export to a local git repo (optionally pushed to a private remote),
+      pulls encrypted backups via SFTP, and reports heartbeats and job results to
+      the Mikrotik Minder control plane. '
+    digest: 34405b899a21d403d273300c019439efa774b1e7eed24e663b95f68f104086bb
+    home: https://github.com/magmamoose/mikrotik-minder
+    icon: https://avatars.githubusercontent.com/magmamoose
+    keywords:
+    - mikrotik
+    - routeros
+    - monitoring
+    - backup
+    - configuration-management
+    maintainers:
+    - name: Magmamoose
+    name: mikrotik-minder-agent
+    sources:
+    - https://github.com/magmamoose/mikrotik-minder
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/mikrotik-minder-agent-0.1.0/mikrotik-minder-agent-0.1.0.tgz
+    version: 0.1.0
   n8n:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -546,4 +577,4 @@ entries:
     urls:
     - https://github.com/CalebSargeant/helm-charts/releases/download/your-spotify-0.1.0/your-spotify-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-16T17:20:03.999586451Z"
+generated: "2026-05-21T17:58:00.280076418Z"
