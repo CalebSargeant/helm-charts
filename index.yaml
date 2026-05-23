@@ -265,6 +265,36 @@ entries:
   mikrotik-minder-agent:
   - annotations:
       artifacthub.io/changes: |
+        - Agent: poll the control plane for operator-triggered commands (manual backup / export, update apply, sensitive-export download)
+      artifacthub.io/license: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.0.2
+    created: "2026-05-23T06:56:16.383961116Z"
+    description: 'Mikrotik Minder agent — runs from inside a Kubernetes cluster that
+      has network access to your MikroTik routers. Probes them over RouterOS API/SSH,
+      captures /export to a local git repo (optionally pushed to a private remote),
+      pulls encrypted backups via SFTP, and reports heartbeats and job results to
+      the Mikrotik Minder control plane. '
+    digest: 80da0a74d4e0d8cf5ccd26e8639f6473a2d90312686a8a3abbfdcbb4114b9b9b
+    home: https://github.com/magmamoose/mikrotik-minder
+    icon: https://avatars.githubusercontent.com/magmamoose
+    keywords:
+    - mikrotik
+    - routeros
+    - monitoring
+    - backup
+    - configuration-management
+    maintainers:
+    - name: Magmamoose
+    name: mikrotik-minder-agent
+    sources:
+    - https://github.com/magmamoose/mikrotik-minder
+    type: application
+    urls:
+    - https://github.com/CalebSargeant/helm-charts/releases/download/mikrotik-minder-agent-0.1.3/mikrotik-minder-agent-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |
         - Fix git deploy key losing its trailing newline (ssh "error in libcrypto")
       artifacthub.io/license: Apache-2.0
     apiVersion: v2
@@ -637,4 +667,4 @@ entries:
     urls:
     - https://github.com/CalebSargeant/helm-charts/releases/download/your-spotify-0.1.0/your-spotify-0.1.0.tgz
     version: 0.1.0
-generated: "2026-05-22T15:12:51.597205601Z"
+generated: "2026-05-23T06:56:16.383988587Z"
